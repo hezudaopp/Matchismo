@@ -51,4 +51,21 @@
     }
 }
 
+- (int) match:(NSArray *)others
+{
+    int score = 0;
+    id obj = [others firstObject];
+    if ([obj isKindOfClass:[PlayCard class]]) {
+        PlayCard *other = (PlayCard *)obj;
+        if ([self.suit isEqualToString:other.suit]) {
+            score = 1;
+        } else if(self.rank == other.rank) {
+            score = 4;
+        }
+    }
+    
+    return score;
+}
+
+
 @end

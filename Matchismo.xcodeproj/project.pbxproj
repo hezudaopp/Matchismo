@@ -23,8 +23,10 @@
 		485049FA1880EF5600AA3308 /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 485049F91880EF5600AA3308 /* MatchismoTests.m */; };
 		48504A0518812EBC00AA3308 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 48504A0418812EBC00AA3308 /* Card.m */; };
 		48504A0918812EEA00AA3308 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 48504A0818812EEA00AA3308 /* Deck.m */; };
-		48504A0C18815E9000AA3308 /* PlayCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 48504A0B18815E9000AA3308 /* PlayCard.m */; };
-		48504A0F18815EA400AA3308 /* PlayDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 48504A0E18815EA400AA3308 /* PlayDeck.m */; };
+		48504A121882B2F700AA3308 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 48504A111882B2F700AA3308 /* CardMatchingGame.m */; };
+		48504A171882B3A400AA3308 /* PlayCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 48504A141882B3A400AA3308 /* PlayCard.m */; };
+		48504A181882B3A400AA3308 /* PlayDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 48504A161882B3A400AA3308 /* PlayDeck.m */; };
+		48D64DA618877B8F003F428E /* ThreeCardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D64DA518877B8F003F428E /* ThreeCardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +63,14 @@
 		48504A0418812EBC00AA3308 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		48504A0718812EEA00AA3308 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
 		48504A0818812EEA00AA3308 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
-		48504A0A18815E9000AA3308 /* PlayCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayCard.h; sourceTree = "<group>"; };
-		48504A0B18815E9000AA3308 /* PlayCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayCard.m; sourceTree = "<group>"; };
-		48504A0D18815EA400AA3308 /* PlayDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayDeck.h; sourceTree = "<group>"; };
-		48504A0E18815EA400AA3308 /* PlayDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayDeck.m; sourceTree = "<group>"; };
+		48504A101882B2F700AA3308 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
+		48504A111882B2F700AA3308 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
+		48504A131882B3A400AA3308 /* PlayCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayCard.h; path = Model/PlayCard.h; sourceTree = "<group>"; };
+		48504A141882B3A400AA3308 /* PlayCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayCard.m; path = Model/PlayCard.m; sourceTree = "<group>"; };
+		48504A151882B3A400AA3308 /* PlayDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayDeck.h; path = Model/PlayDeck.h; sourceTree = "<group>"; };
+		48504A161882B3A400AA3308 /* PlayDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayDeck.m; path = Model/PlayDeck.m; sourceTree = "<group>"; };
+		48D64DA418877B8F003F428E /* ThreeCardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreeCardMatchingGame.h; path = Model/ThreeCardMatchingGame.h; sourceTree = "<group>"; };
+		48D64DA518877B8F003F428E /* ThreeCardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreeCardMatchingGame.m; path = Model/ThreeCardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,14 +174,18 @@
 		48504A0618812EC700AA3308 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				48504A101882B2F700AA3308 /* CardMatchingGame.h */,
+				48504A111882B2F700AA3308 /* CardMatchingGame.m */,
+				48D64DA418877B8F003F428E /* ThreeCardMatchingGame.h */,
+				48D64DA518877B8F003F428E /* ThreeCardMatchingGame.m */,
 				48504A0318812EBC00AA3308 /* Card.h */,
 				48504A0418812EBC00AA3308 /* Card.m */,
 				48504A0718812EEA00AA3308 /* Deck.h */,
 				48504A0818812EEA00AA3308 /* Deck.m */,
-				48504A0A18815E9000AA3308 /* PlayCard.h */,
-				48504A0B18815E9000AA3308 /* PlayCard.m */,
-				48504A0D18815EA400AA3308 /* PlayDeck.h */,
-				48504A0E18815EA400AA3308 /* PlayDeck.m */,
+				48504A131882B3A400AA3308 /* PlayCard.h */,
+				48504A141882B3A400AA3308 /* PlayCard.m */,
+				48504A151882B3A400AA3308 /* PlayDeck.h */,
+				48504A161882B3A400AA3308 /* PlayDeck.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -278,13 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D64DA618877B8F003F428E /* ThreeCardMatchingGame.m in Sources */,
 				48504A0918812EEA00AA3308 /* Deck.m in Sources */,
-				48504A0C18815E9000AA3308 /* PlayCard.m in Sources */,
+				48504A171882B3A400AA3308 /* PlayCard.m in Sources */,
 				485049DF1880EF5600AA3308 /* CardGameAppDelegate.m in Sources */,
+				48504A181882B3A400AA3308 /* PlayDeck.m in Sources */,
 				485049E51880EF5600AA3308 /* CardGameViewController.m in Sources */,
+				48504A121882B2F700AA3308 /* CardMatchingGame.m in Sources */,
 				485049DB1880EF5600AA3308 /* main.m in Sources */,
 				48504A0518812EBC00AA3308 /* Card.m in Sources */,
-				48504A0F18815EA400AA3308 /* PlayDeck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +505,7 @@
 				485049FF1880EF5600AA3308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48504A001880EF5600AA3308 /* Build configuration list for PBXNativeTarget "MatchismoTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +514,7 @@
 				48504A021880EF5600AA3308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
