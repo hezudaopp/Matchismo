@@ -11,5 +11,6 @@
 @interface ThreeCardMatchingGame : CardMatchingGame
 
 -(void) chooseCardAtIndex:(NSUInteger)index;
+-(NSUInteger) matchTwoChoosenCards:(NSMutableArray *)otherTwoCards withCard:(Card *)card;
 
 @end

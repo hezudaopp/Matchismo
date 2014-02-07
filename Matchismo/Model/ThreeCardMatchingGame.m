@@ -15,6 +15,7 @@
 @property (nonatomic, readwrite) NSInteger gainScore;
 @property (strong, nonatomic, readwrite) NSString *cardNames;
 @property (strong, nonatomic, readwrite) NSString *cardName;
+@property (nonatomic, readwrite) NSInteger chosenCount;
 
 @end
 
@@ -37,10 +38,13 @@ static const int COST_TO_CHOOSE = 1;
     if (!card.isMatched) {
         if (card.isChosen) {
             card.chosen = NO;
+            [self.chosenCardsStack removeObject:card];
         } else {
+            [self.chosenCardsStack addObject:card];
             NSMutableArray *otherTwoCards = [[NSMutableArray alloc] init];
             for (Card *otherCard in self.cards) {
                 if (!otherCard.isMatched && otherCard.isChosen) {
+                    self.chosenCount++;
                     [otherTwoCards addObject:otherCard];
                 }
             }

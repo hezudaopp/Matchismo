@@ -16,12 +16,18 @@
 
 - (void)chooseCardAtIndex:(NSUInteger)index;
 - (Card *)cardAtIndex:(NSUInteger)index;
-- (void)resetGame;
-- (NSString *)infoString;
+- (NSArray *) getChosenCards;
+- (void) removeAllObjectsFromChosenCardsStack;
+- (void) addObjectToChosenCardsStack:(Card *)card;
+//- (NSString *)infoString;
+- (void) appendStringToHistory:(NSString *) string;
+- (void) appendAttributedStringToHistory:(NSAttributedString *) attributedString;
 
 @property (nonatomic, readonly) NSUInteger score;
 @property (nonatomic, readonly) NSInteger gainScore;
 @property (strong, nonatomic, readonly) NSString *cardName;
 @property (strong, nonatomic, readonly) NSString *cardNames;
+@property (strong, nonatomic, readonly) NSMutableArray *chosenCardsStack;
+@property (strong, nonatomic, readonly) NSMutableAttributedString *history;
 
 @end
